@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>secretmessage.io beta</title>
+  <script>
+  window.TextEncoder = window.TextDecoder = null;
+
+  </script>
+  <script src="./js/encoding.js"></script>
+  <script src="./js/es6-promise.auto.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
+    <a class="navbar-brand" href="/">
+		<img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+			Secret Message <sup class="text-success">beta</sup>
+	</a>
+  </nav>
+  <div class="container" style="padding-top:20px;">
+    <p class="text-center">
+      Write your secret and choose a pass phrase or password that is easy to communicate.
+    </p>
+    <form id="encryptform">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <textarea style="width:100%;" class="form-control" rows="4" autocomplete="off" name="message" id="message" placeholder="Write your secret here">My secret message</textarea>
+        </div>
+      </div>
+      <p style="padding-top:10px;" class="text-center">
+        Be sure to communicate the pass phrase safely - preferably face to face.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Pass phrase</span>
+            </div>
+            <input autocomplete="off" size="50" type="text" name="encryptpass" id="encryptpass" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="text-align: center;">
+        <div class="col-auto">&nbsp;</div>
+      </div>
+      <div class="row justify-content-center" style="text-align: center;">
+        <div class="col-2">
+          <button type="submit" id="generatebtn" class="btn btn-success" disabled>Generate link</button>
+        </div>
+      </div>
+      <p style="padding-top:10px;" class="text-center">
+        You can choose to generate the link and copy / paste it.
+        <br> Or you can create an e-mail with the link, using your default e-mail app.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-secondary" type="button" id="copybtn" disabled>Copy</button>
+              <button class="btn btn-secondary" type="button" id="mailbtn" disabled>E-mail</button>
+            </div>
+            <input type="text" class="form-control" id="secretlink" rows="3" autocomplete="off" name="secretlink" placeholder="Link with the secret" readonly>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

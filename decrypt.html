@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>secretmessage.io beta</title>
+  <script>
+  window.TextEncoder = window.TextDecoder = null;
+
+  </script>
+  <!-- Required for non-UTF encodings -->
+  <!-- <script src="./js/encoding-indexes.js"></script> -->
+  <script src="./js/encoding.js"></script>
+  <script src="./js/es6-promise.auto.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
+    <a class="navbar-brand" href="/">
+    <img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+      Secret Message <sup class="text-success">beta</sup>
+  </a>
+  </nav>
+  <div class="container" style="padding-top:20px;">
+    <p class="text-center">
+      To decrypt the message, please enter the pass phrase.
+    </p>
+    <form id="decryptform">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Pass phrase</span>
+            </div>
+            <input autocomplete="off" size="50" type="password" name="decryptpass" id="decryptpass" class="form-control">
+            <div class="input-group-append">
+              <button type="submit" id="showmessage" class="btn btn-success" disabled>Show message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="padding-top:10px;" class="text-center">
+        Your secret message:
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <textarea style="width:100%;" class="form-control" rows="4" autocomplete="off" readonly name="message" id="message"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
