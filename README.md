@@ -21,6 +21,11 @@ Everything is handled in the browser, nothing is sent to a server or third party
 A non-complete list of missing things
 
 - [ ] Create checks and warning for needed/missing browser features like crypto
+- [ ] Error messages for the
+  - [ ] Wrong password
+  - [ ] Missing libs
+  - [ ] Known errors
+  - [ ] Any other errors 
 - [ ] Add pages
   - [ ] About
   - [ ] Privacy
