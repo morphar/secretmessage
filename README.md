@@ -21,7 +21,7 @@ Everything is handled in the browser, nothing is sent to a server or third party
 A non-complete list of missing things
 
 - [ ] Create checks and warning for needed/missing browser features like crypto
-- [ ] Error messages for the
+- [ ] Error messages for
   - [ ] Wrong password
   - [ ] Missing libs
   - [ ] Known errors
@@ -34,5 +34,14 @@ A non-complete list of missing things
 - [ ] Fix footer + add links to pages
 - [ ] Helper function to generate a memorable / communicable pass phrase
 - [ ] Pass phrase entropy indicator (from red -> green)
+- [ ] Tests (desktop and mobile)
+  - [ ] MSIE
+  - [ ] Chrome
+  - [ ] Safari
+  - [ ] Firefox
+  - [ ] Cross browser encrypt / decrypt
+
+
+
 
   
