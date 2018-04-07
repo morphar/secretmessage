@@ -180,7 +180,9 @@ function base64Decode(base64) {
 /* Copy to clipboard */
 
 function copyToClipBoard() {
-	secretLink.select();
+	secretLink.focus();
+	secretLink.selectionStart = 0;
+	secretLink.selectionEnd = 9999;
 	document.execCommand("copy");
 	toggleCopyButton();
 }
