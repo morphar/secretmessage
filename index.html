@@ -17,9 +17,9 @@
 <body>
     <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
         <a class="navbar-brand" href="/">
-		<img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
-			Secret Message <sup class="text-success">beta</sup>
-	</a>
+        <img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+            Secret Message <sup class="text-success">beta</sup>
+    </a>
     </nav>
     <div class="container" style="padding-top:20px;">
         <p class="text-center">
@@ -27,7 +27,7 @@
         </p>
         <form id="encryptform">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <textarea style="width:100%;" class="form-control" rows="4" autocomplete="off" name="message" id="message" placeholder="Write your secret here"></textarea>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 Be sure to communicate the pass phrase safely - preferably face to face.
             </p>
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Pass phrase</span>
@@ -48,31 +48,37 @@
                 <div class="col-auto">&nbsp;</div>
             </div>
             <div class="row justify-content-center" style="text-align: center;">
-                <div class="col-2">
+                <div class="col-lg-2">
                     <button type="submit" id="generatebtn" class="btn btn-success" disabled>Generate link</button>
                 </div>
             </div>
             <p style="padding-top:10px;" class="text-center">
-                You can choose to generate the link and copy / paste it.
-                <br> Or you can create an e-mail with the link, using your default e-mail app.
+                Copy / paste the generated link or create a new e-mail with the link, using your default e-mail app.
             </p>
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <button class="btn btn-secondary" type="button" id="copybtn" disabled>Copy</button>
                             <button class="btn btn-secondary" type="button" id="mailbtn" disabled>E-mail</button>
                         </div>
-                        <input type="text" class="form-control" id="secretlink" rows="3" autocomplete="off" name="secretlink" placeholder="Link with the secret" readonly>
+
+                        <input type="text" class="form-control" id="secretlink" autocomplete="off" name="secretlink" placeholder="Secret link" readonly>
                     </div>
                 </div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-auto">&nbsp;</div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-auto">&nbsp;</div>
             </div>
         </form>
     </div>
     <footer class="navbar fixed-bottom navbar-light bg-light">
         <div class="container justify-content-center">
-			<span class="text-muted" style="font-size:0.8em;">
-        		<a href="https://github.com/morphar/secretmessage.io">GitHub</a>
+            <span class="text-muted" style="font-size:0.8em;">
+                <a href="https://github.com/morphar/secretmessage.io">GitHub</a>
             </span>
         </div>
     </footer>

@@ -20,9 +20,9 @@
 <body>
     <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
         <a class="navbar-brand" href="/">
-    <img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
-      Secret Message <sup class="text-success">beta</sup>
-  </a>
+            <img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+            Secret Message <sup class="text-success">beta</sup>
+        </a>
     </nav>
     <div class="container" style="padding-top:20px;">
         <p class="text-center">
@@ -30,25 +30,36 @@
         </p>
         <form id="decryptform">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Pass phrase</span>
                         </div>
                         <input autocomplete="off" size="50" type="password" name="decryptpass" id="decryptpass" class="form-control">
-                        <div class="input-group-append">
-                            <button type="submit" id="showmessage" class="btn btn-success" disabled>Show message</button>
-                        </div>
                     </div>
                 </div>
             </div>
-            <p style="padding-top:10px;" class="text-center">
-                Your secret message:
-            </p>
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <textarea style="width:100%;" class="form-control" rows="4" autocomplete="off" readonly name="message" id="message"></textarea>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-lg-auto">&nbsp;</div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-lg-2">
+                    <button type="submit" id="showmessage" class="btn btn-success" disabled>Show message</button>
                 </div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-lg-auto">&nbsp;</div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <textarea style="width:100%;" class="form-control" rows="4" autocomplete="off" readonly name="message" id="message" placeholder="Your secret message"></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-auto">&nbsp;</div>
+            </div>
+            <div class="row justify-content-center" style="text-align: center;">
+                <div class="col-auto">&nbsp;</div>
             </div>
         </form>
     </div>
