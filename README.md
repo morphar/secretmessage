@@ -17,31 +17,19 @@ I have tried to keep things simple, conventional, standard and "boring".
 I haven't invented anything new, but utilized the common standards and the browers' crypto library [SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto).  
 Everything is handled in the browser, nothing is sent to a server or third party.
 
+## Security Audit
+
+Secret Message has not been security audited officially or unonficially, yet.  
+The source code is open and can be scrutinized by anybody.  
+You're also free to copy the code and create your own copy.  
+If you want to audit Secret Message or know anybody who want to do it for free, please do contact me.
+
 ## TODO
-A non-complete list of missing things
 
-- [ ] Create checks and warning for needed/missing browser features like crypto
-- [ ] Error messages for
-  - [ ] Wrong password
-  - [ ] Missing libs
-  - [ ] Known errors
-  - [ ] Any other errors 
-- [ ] Add pages
-  - [ ] About
-  - [ ] Privacy
-  - [ ] Security
-  - [ ] Terms
-- [ ] Fix footer + add links to pages
-- [ ] Helper function to generate a memorable / communicable pass phrase
-- [ ] Pass phrase entropy indicator (from red -> green)
-- [ ] Tests (desktop and mobile)
-  - [ ] MSIE
-  - [ ] Chrome
-  - [ ] Safari
-  - [ ] Firefox
-  - [ ] Cross browser encrypt / decrypt
+See the [Secret Message project](https://github.com/morphar/secretmessage.io/projects/1) page.
+
+## Known bugs
+
+See the [issues labeled bugs](https://github.com/morphar/secretmessage.io/labels/bug).
 
 
-
-
-  
