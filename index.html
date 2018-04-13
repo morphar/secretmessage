@@ -8,20 +8,20 @@
     <script>
     window.TextEncoder = window.TextDecoder = null;
     </script>
-    <script src="./js/encoding.js"></script>
-    <script src="./js/es6-promise.auto.min.js"></script>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <script src="/js/encoding.js"></script>
+    <script src="/js/es6-promise.auto.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
     <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
         <a class="navbar-brand" href="/">
-        <img src="./img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+        <img src="/img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
             Secret Message <sup class="text-success">beta</sup>
     </a>
     </nav>
-    <div class="container" style="padding-top:20px;">
+    <main role="main" class="container">
         <p class="text-center">
             Write your secret and choose a pass phrase or password that is easy to communicate.
         </p>
@@ -67,22 +67,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center" style="text-align: center;">
-                <div class="col-auto">&nbsp;</div>
-            </div>
-            <div class="row justify-content-center" style="text-align: center;">
-                <div class="col-auto">&nbsp;</div>
-            </div>
         </form>
-    </div>
-    <footer class="navbar fixed-bottom navbar-light bg-light">
+    </main>
+    <footer class="footer fixed-bottom bg-light">
         <div class="container justify-content-center">
             <span class="text-muted" style="font-size:0.8em;">
                 <a href="https://github.com/morphar/secretmessage.io">GitHub</a>
             </span>
         </div>
     </footer>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="/js/security.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
 
 </html>
