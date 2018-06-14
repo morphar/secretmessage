@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>secretmessage.io beta</title>
+    <script>
+    window.TextEncoder = window.TextDecoder = null;
+    </script>
+    <script src="/js/encoding.js"></script>
+    <script src="/js/es6-promise.auto.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="/">
+        <img src="/img/logo_small.svg" height="30" class="d-inline-block align-top" alt="">
+            Secret Message <sup class="text-success">beta</sup>
+    </a>
+    </nav>
+
+Why facebook messenger is not secure.
+Why end-to-end encryption is not enough (it is, but the term is used wrongly, maybe even deceiptfully). You need client-to-client encryption with a key, the server owner does not have access to.
+  end-to-end might be used as: client -> server & server -> client
+  this is ONLY encrypted in transit.
+
+    <main role="main" class="container">
+        <h1 class="text-center">About Secret Message</h1>
+        <p>
+            I created Secret Message as a simple solution to a small but recurring problem - sharing secrets like passwords.<br>
+            Over the years I have seen passwords being send over e-mail, ICQ, Messenger, Skype, SMS, Slack, you name it!
+        </p>
+        <p>
+            Though you might think: "Nobody is interested in our password for service X", you might be wrong and in any circumstance, it is bad security practice.<br>
+            Oh! And you just shared your password with Slack, Google, Facebook or whoever owns the service and all of their staff with database access (Which in many cases is most of the staff).<br>
+        </p>
+            I want to explain a misconception and why you might be wrong (skip if you don't care 😉).<br>
+            Many people think in the lines of: "I have nothing to hide", which disguises the real issue.<br>
+            No, you might not be interesting but, in case of identity, yours and 999 other peoples' identity might be interesting and can and are being misused ever single day.<br>
+            In case of your servers and services, information about people is in general interesting for Bad Guys<sup style="font-size:0.6em;">TM</sup>.<br>
+            If they can gain access to your servers or services and extract e-mail and any other informaion, they can start building up complete profiles and people, which identity can then be misused.<br>
+            &nbsp;<br>
+            Like it or not, security comes from thinking: all information is interesting to Bad Guys<sup style="font-size:0.6em;">TM</sup> and treating all information as sensitive, put's you in the right state of mind, when it comes to protecting information and making it secure.
+        <p>
+        </p>
+        <p>
+            Secret Message aims to solves this problem, by making it easy to encrypt a message and send it over insecure channels like those services.
+        </p>
+        <p>
+            "But you ask for a password! How am I gonna share that?".<br>
+            Excellent question!<br>
+            Rule number 1: Don't share that password over the same channel as you shared the secret.<br>
+        </p>
+        <p>
+            "Doesn't sharing another password kinda defeat the purpose?".<br>
+            You are full of excellent questions!<br>
+            No, it does not defeat the purpose. What is accomplished by this process, is a form of 2-factor authentication:<br>
+            You have something: the encrypted message.<br>
+            You know something: the password, that the message was encrypted with.<br>
+            In order for anybody to get the original, encrypted password, you would need both the message and the password used to encrypt the message.<br>
+            &nbsp;<br>
+            The safety of the original encrypted password is now based on having to get access to the encrypted message AND the password used to encrypt the message.<br>
+            So the security now depends on how safely you share the encryption password.<br>
+            &nbsp;<br>
+            A simple rule for the safest way of sharing the encryption password:<br>
+            Share it in a way that doesn't leave a copy.<br>
+            This could be by telling the receiver face to face, what it is.<br>
+            &nbsp;<br>
+            A phone call comes close to being just as safe as it would be hard to listen in on that conversation or get a recording of it.<br>
+        </p>
+        <p>
+            "Why bother? Why not just share the secret face to face?".<br>
+            That is close to just as secure, you loose the 2-factor security, but at least you don't have the password floating around on Slack's servers.<br>
+            One problem might be if you have to say something like this over the phone:<br>
+            "a, 2, capital B, q, ...", you get the idea, it's hard to get right and both sender and receiver will probably speak the entire password in a setting with other people.
+        </p>
+    </main>
+    <footer class="footer fixed-bottom bg-light">
+        <div class="container justify-content-center">
+            <span class="text-muted" style="font-size:0.8em;">
+                <a href="https://github.com/morphar/secretmessage.io">GitHub</a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

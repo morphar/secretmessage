@@ -24,6 +24,13 @@ The source code is open and can be scrutinized by anybody.
 You're also free to copy the code and create your own copy.  
 If you want to audit Secret Message or know anybody who want to do it for free, please do contact me.
 
+## Contribute
+
+* Fork `master` branch
+* Do code
+* Make pull request
+* Receive: Thank you! 😘 🙏
+
 ## TODO
 
 See the [Secret Message project](https://github.com/morphar/secretmessage.io/projects/1) page.

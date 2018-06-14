@@ -24,7 +24,7 @@ function encryptMessage(event) {
 			var secretMessage = base64Encode(enc.encBuffer);
 
 			var link = window.location.protocol + "//" + window.location.host;
-			link += "/decrypt.html?iv=" + encodeURIComponent(iv);
+			link += "/decrypt?iv=" + encodeURIComponent(iv);
 			link += "&message=" + encodeURIComponent(secretMessage);
 			secretLink.value = link;
 			copyBtn.disabled = false;

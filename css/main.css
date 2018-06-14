@@ -1,7 +1,55 @@
+body {
+	font-size: 0.9em;
+}
+
 main {
 	margin-bottom: 40px;
 }
 
+main h2.tagline {
+	font-style: oblique;
+	font-size: 1.2em;
+}
+
+main.faq h3 {
+	padding-top: 1rem;
+}
+
+main.faq hr {
+	background-color: #336;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
 .navbar-brand sup {
 	font-size: 0.6em;
+}
+
+.profilepic {
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.profilename {
+	font-weight: normal;
+}
+
+a#contact-linkedin {
+
+}
+
+a#contact-twitter {
+
+}
+
+a.contact-link {
+	line-height: 16px;
+}
+
+footer ul {
+	margin-bottom: 0;
+}
+
+footer li {
+	list-style-type: none;
 }

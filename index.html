@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>secretmessage.io beta</title>
+    <title>secretmessage.io beta - safer the plain text</title>
     <script>
     window.TextEncoder = window.TextDecoder = null;
     </script>
@@ -23,6 +23,11 @@
     </nav>
     <main role="main" class="container">
         <p class="text-center">
+            <h2 class="tagline text-center">Secret Message is a safer way to share passwords and secrets with trusted receivers over insecure channels.</h2>
+            <h2 class="tagline text-center">It is NOT a replacement for good security practices or password managers.</h2>
+        </p>
+        <p class="text-center">
+            <br>&nbsp;
             Write your secret and choose a pass phrase or password that is easy to communicate.
         </p>
         <form id="encryptform">
@@ -33,6 +38,7 @@
             </div>
             <p style="padding-top:10px;" class="text-center">
                 Be sure to communicate the pass phrase safely - preferably face to face.
+                <br><strong>WARNING:</strong> Having the link and the pass phrase will forever enable decryption of the secret.
             </p>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -71,9 +77,11 @@
     </main>
     <footer class="footer fixed-bottom bg-light">
         <div class="container justify-content-center">
-            <span class="text-muted" style="font-size:0.8em;">
-                <a href="https://github.com/morphar/secretmessage.io">GitHub</a>
-            </span>
+            <ul class="text-muted">
+                <li><a href="https://github.com/morphar/secretmessage.io">GitHub</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
         </div>
     </footer>
     <script type="text/javascript" src="/js/security.js"></script>
