@@ -1,8 +1,8 @@
-# [secretmessage.io](https://secretmessage.io/) BETA
+# [morphar.github.io/secretmessage](https://morphar.github.io/secretmessage/) BETA
 
 Secret Message is an attempt to create a secure and easy way to share passwords and other sensitive information, without having to e.g. use a shared password manager.
 
-This repo contains all of the code used on the website [Secret Message](https://secretmessage.io/).
+This repo contains all of the code used on the website [Secret Message](https://morphar.github.io/secretmessage/).
 
 The technical details of the implementation will be documented on the website.
 
@@ -33,10 +33,10 @@ If you want to audit Secret Message or know anybody who want to do it for free, 
 
 ## TODO
 
-See the [Secret Message project](https://github.com/morphar/secretmessage.io/projects/1) page.
+See the [Secret Message project](https://github.com/morphar/secretmessage/projects/1) page.
 
 ## Known bugs
 
-See the [issues labeled bugs](https://github.com/morphar/secretmessage.io/labels/bug).
+See the [issues labeled bugs](https://github.com/morphar/secretmessage/labels/bug).
 
 
