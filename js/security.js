@@ -23,7 +23,8 @@ function encryptMessage(event) {
 			var iv = base64Encode(enc.iv);
 			var secretMessage = base64Encode(enc.encBuffer);
 
-			var link = window.location.protocol + "//" + window.location.host;
+			// var link = window.location.protocol + "//" + window.location.host;
+			var link = window.location.protocol + "//" + window.location.host + '/secretmessage';
 			link += "/decrypt?iv=" + encodeURIComponent(iv);
 			link += "&message=" + encodeURIComponent(secretMessage);
 			secretLink.value = link;
